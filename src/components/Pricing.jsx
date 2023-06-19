@@ -4,14 +4,6 @@ import { motion } from "framer-motion";
 import { ContratarModal } from "./ContratarModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
-const pricingData = [
-  "Seamless integration",
-  "Real-time data visualization",
-  "Advanced predictive analytics",
-  "Collaborative environment",
-  "Responsive customer support",
-];
-
 const planData = [
   {
     name: "Plano Impulso Digital",
@@ -35,7 +27,7 @@ const planData = [
       "Todas as características do Plano Impulso Digital",
       "Desenvolvimento de Site Institucional (até 5 páginas)",
       "Domínio personalizado",
-      "Chat online",
+      "Integração de form de contato",
       "Entrega expressa em até: 24hrs",
     ],
   },
@@ -47,8 +39,8 @@ const planData = [
     features: [
       "Todas as características do Plano Premium Digital",
       "Desenvolvimento de Site Institucional (até 8 páginas)",
-      "Integração de form de contato",
-      "Funcionalidades e integrações personalizadas",
+      "Chat online",
+      "3 Funcionalidades e integrações personalizadas",
       "Entrega em até: 72hrs",
     ],
   },
@@ -57,7 +49,7 @@ const planData = [
 export const Pricing = () => {
   return (
     <section className="w-screen flex justify-center bg-customDarkBg2 relative">
-      <div className="absolute -top-16" id="pricing" />
+      <div className="absolute -top-16" id="precos" />
       <div className="pb-20 pt-12 bg-customDarkBg2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
           initial={{ opacity: 0 }}

@@ -6,11 +6,11 @@ import feature3 from "../assets/images/feature3.jpg";
 import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
-export const Features1 = () => {
+export const Servicos = () => {
   return (
     <section
       className="w-full bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0  xl:m pt-[2rem]  md:pt-[12vw] lg:pt-0"
-      id="features"
+      id="servicos"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -21,27 +21,25 @@ export const Features1 = () => {
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span className="custom-block-subtitle">Embrace Innovation</span>
+              <span className="custom-block-subtitle">Acelere Sua Presença Online</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                Unlike any tool you used before
+              Sites Profissionais em um Piscar de Olhos ⚡️
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Discover a new level of data analysis with our innovative and
-                user-friendly platform. Transform your business needs with actionable
-                insights.
+              Entregamos sites profissionais, responsivos e totalmente integrados em tempo recorde. Escolha o plano que se encaixa nas suas necessidades e veja seu negócio se transformar.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Real-time data visualization</span>
+                  <span>Desenvolvimento de Site com Entrega Expressa 🚀</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Advanced predictive analytics</span>
+                  <span>Potencialize sua marca com agilidade e expertise 〽️</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Seamless integration with APIs</span>
+                  <span>Design Responsivo, Domínio + Host, e muito mais! 🧠</span>
                 </li>
               </ul>
             </div>

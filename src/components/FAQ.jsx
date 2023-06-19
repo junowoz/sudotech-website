@@ -10,7 +10,7 @@ const FAQData = [
   {
     question: "Quanto tempo leva para completar um projeto?",
     answer:
-      "O tempo de conclusão do projeto varia de acordo com o plano escolhido. Para o Plano Presença Digital e o Plano Crescimento Digital, a entrega é em até 24 horas, e para o Plano Excelência Digital, a entrega é em até 72 horas.",
+      "O tempo de conclusão do projeto varia de acordo com o plano escolhido. Para o Plano Presença Digital, a entrega é em até 24 horas. Para o Plano Crescimento Digital, a entrega é em até 48 horas. E para o Plano Excelência Digital, a entrega é em até 72 horas.",
   },
   {
     question: "Quantas revisões estão incluídas no preço?",
@@ -21,6 +21,29 @@ const FAQData = [
     question: "O preço inclui o domínio e a hospedagem?",
     answer:
       "O preço do domínio e da hospedagem varia e será determinado durante o levantamento de requisitos. Estes são custos extras e não estão incluídos no preço do plano. No entanto, o plano de Domínio (.com.br) + hospedagem é por conta da empresa no primeiro ano.",
+  },
+  {
+    question:
+      "O que acontece se eu precisar de mais páginas do que as incluídas no meu plano?",
+    answer:
+      "Se você precisar de mais páginas do que as incluídas no seu plano, podemos discutir suas necessidades e fornecer um orçamento para as páginas adicionais.",
+  },
+  {
+    question:
+      "O que acontece se eu precisar de alterações após o projeto estar concluído?",
+    answer:
+      "Após a conclusão do projeto, quaisquer alterações adicionais podem ser feitas através do nosso Plano de Manutenção Mensal, ou podemos fornecer um orçamento para alterações específicas.",
+  },
+  {
+    question:
+      "O que acontece se eu não estiver satisfeito com o trabalho realizado?",
+    answer:
+      "Nosso objetivo é garantir a total satisfação do cliente. Se você não estiver satisfeito com o trabalho realizado, por favor, entre em contato conosco para discutir suas preocupações e vamos trabalhar juntos para encontrar uma solução.",
+  },
+  {
+    question: "O que é a integração de redes sociais no site?",
+    answer:
+      "A integração de redes sociais no site permite que os visitantes do seu site acessem suas páginas de redes sociais diretamente do seu site. Isso pode incluir links para suas páginas no Facebook, Instagram, Twitter, LinkedIn, etc.",
   },
 ];
 

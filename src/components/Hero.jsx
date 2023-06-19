@@ -2,17 +2,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { ContratarModal } from "./ContratarModal";
-import dashboard from "../assets/images/dashboard.jpg";
+import dashboard from "../assets/images/dashboard.png";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section
-      className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
+      className="w-screen  flex justify-center items-center bg-customDarkBg1 hero-bg-gradient"
       id="home"
     >
-      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
+      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-20 md:pt-12 lg:pt-14 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export const Hero = () => {
             <span className="inline md:hidden">Sudo</span>
             <span className="hidden md:inline">Sudo</span>
           </div>
-          <div className="mt-2 sm:mt-2 text-3xl sm:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide  text-white  px-8 sm:px-20 md:px-24 lg:px-24">
+          <div className="mt-2 sm:mt-2 text-5xl sm:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-wide  text-white  px-8 sm:px-20 md:px-24 lg:px-24">
             Seu site em tempo expresso.
           </div>
         </motion.div>
@@ -48,7 +48,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
+          <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-32 sm:mb-32 justify-center">
             <a href="https://wa.link/xh1lyi" target="_blank">
               <div className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0">
                 Entre em contato
@@ -62,7 +62,7 @@ export const Hero = () => {
             </a> */}
           </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 10, zIndex: 20 }}
           animate={{ opacity: 1, y: 0, zIndex: 20 }}
           transition={{ duration: 0.5, delay: 0.15 }}
@@ -73,9 +73,9 @@ export const Hero = () => {
               alt="123"
               className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl custom-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
             />
-          </div>
-        </motion.div>
-        <div className="relative w-screen flex justify-center ">
+          </div> 
+        </motion.div> */}
+        {/* <div className="relative w-screen flex justify-center ">
           <div className="custom-shape-divider-bottom-1665343298 mt-4 sm:mt-16 md:mt-52 hidden lg:block">
             <svg
               data-name="Layer 1"
@@ -90,7 +90,7 @@ export const Hero = () => {
               ></path>
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
       {isModalOpen && (
         <ContratarModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />

@@ -4,18 +4,20 @@ import { SudoLogo } from "../assets/logos/SudoLogo";
 import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 const footerData = [
+  { label: "Início", href: "#home", ariaLabel: "Início" },
+  { label: "Serviços", href: "#servicos", ariaLabel: "Serviços" },
+  { label: "Depoimentos", href: "#depoimentos", ariaLabel: "Depoimentos" },
+  { label: "Preços", href: "#precos", ariaLabel: "Preços" },
+  { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
+];
+
+const contactData = [
+  { label: "WhatsApp", href: "https://wa.link/xh1lyi", ariaLabel: "WhatsApp" },
   {
-    title: "Navegação",
-    items: ["Home", "Features", "Planos", "FeedBack", "FAQ"],
+    label: "Email",
+    href: "mailto:sudocontatobr@gmail.com ",
+    ariaLabel: "Email",
   },
-  {
-    title: "Contato",
-    items: [
-      "WhatsApp",
-      "Email",
-      "Pricing Plans",
-    ],
-  }
 ];
 
 export const Footer = () => {
@@ -48,18 +50,21 @@ export const Footer = () => {
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="https://facebook.com/sudobr"
+                  target="_blank"
                 >
                   <FacebookIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="https://twitter.com/sudobr_"
+                  target="_blank"
                 >
                   <TwitterIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="https://www.instagram.com/sudobr/"
+                  target="_blank"
                 >
                   <InstagramIcon />
                 </a>
@@ -71,32 +76,30 @@ export const Footer = () => {
                   Navegação
                 </h3>
                 <ul>
-                  {footerData[0].items.map((item, i) => (
-                    <li key={i} className="mb-4">
+                  {footerData.map(({ label, href, ariaLabel }) => (
+                    <li key={href} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label=""
+                        href={href}
+                        aria-label={ariaLabel}
                       >
-                        {item}
+                        {label}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold text-white">
-                  Contato
-                </h3>
+                <h3 className="mb-6 text-2xl font-bold text-white">Contato</h3>
                 <ul>
-                  {footerData[1].items.map((item, i) => (
-                    <li key={i} className="mb-4">
+                  {contactData.map(({ label, href, ariaLabel }) => (
+                    <li key={href} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label=""
+                        href={href}
+                        aria-label={ariaLabel}
                       >
-                        {item}
+                        {label}
                       </a>
                     </li>
                   ))}

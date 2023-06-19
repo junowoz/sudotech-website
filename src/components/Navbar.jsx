@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { SudoLogo } from "../assets/logos/SudoLogo";
-import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
   { label: "Início", href: "#home", ariaLabel: "Início" },
