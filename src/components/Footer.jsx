@@ -5,24 +5,17 @@ import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 const footerData = [
   {
-    title: "Products",
-    items: ["Services", "About Us", "News and Stories", "Roadmap"],
+    title: "Navegação",
+    items: ["Home", "Features", "Planos", "FeedBack", "FAQ"],
   },
   {
-    title: "Important Links",
+    title: "Contato",
     items: [
-      "Organization Team",
-      "Our Journeys",
+      "WhatsApp",
+      "Email",
       "Pricing Plans",
-      "Roadmap",
-      "Terms & Conditions",
-      "Privacy Policy",
     ],
-  },
-  {
-    title: "Company",
-    items: ["About Us", "Jobs", "Press", "Contact Us"],
-  },
+  }
 ];
 
 export const Footer = () => {
@@ -41,33 +34,32 @@ export const Footer = () => {
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Dashboard images were made using free Dark Admin dashboard that
-                you can find
+                Seu site em tempo
                 <a
-                  href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
+                  href="https://sudo.junowoz.com"
                   target="_blank"
                   className="text-gray-100 ml-1.5 "
                   aria-label="DarkAdmin"
                 >
-                  here.
+                  expresso.
                 </a>
               </p>
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
+                  href="https://facebook.com/sudobr"
                 >
                   <FacebookIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
+                  href="https://twitter.com/sudobr_"
                 >
                   <TwitterIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
+                  href="https://www.instagram.com/sudobr/"
                 >
                   <InstagramIcon />
                 </a>
@@ -75,7 +67,9 @@ export const Footer = () => {
             </div>
             <div className="w-full lg:w-2/3  lg:pl-16 hidden lg:flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
+                <h3 className="mb-6 text-2xl font-bold text-white">
+                  Navegação
+                </h3>
                 <ul>
                   {footerData[0].items.map((item, i) => (
                     <li key={i} className="mb-4">
@@ -92,7 +86,7 @@ export const Footer = () => {
               </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">
-                  Important Links
+                  Contato
                 </h3>
                 <ul>
                   {footerData[1].items.map((item, i) => (
@@ -108,26 +102,10 @@ export const Footer = () => {
                   ))}
                 </ul>
               </div>
-              <div className="w-full md:w-1/3 lg:w-auto">
-                <h3 className="mb-6 text-2xl font-bold text-white">Company</h3>
-                <ul>
-                  {footerData[2].items.map((item, i) => (
-                    <li key={i} className="mb-4">
-                      <a
-                        className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label=""
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
           <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; 2022. MIT license.
+            2023 &copy; Sudo. Todos os direitos reservados
           </p>
         </div>
       </div>

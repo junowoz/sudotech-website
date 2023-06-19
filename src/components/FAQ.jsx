@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
+    question: "Quando preciso pagar pelos serviços?",
     answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+      "O pagamento será solicitado após a conclusão e aprovação do projeto. Isso é para garantir a total segurança e satisfação do cliente. Todos os preços citados já têm impostos e custos inclusos.",
   },
   {
-    question: "How to claim your 25% discount offer?",
+    question: "Quanto tempo leva para completar um projeto?",
     answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
+      "O tempo de conclusão do projeto varia de acordo com o plano escolhido. Para o Plano Presença Digital e o Plano Crescimento Digital, a entrega é em até 24 horas, e para o Plano Excelência Digital, a entrega é em até 72 horas.",
   },
   {
-    question: "What's your refund policy?",
+    question: "Quantas revisões estão incluídas no preço?",
     answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
+      "Oferecemos 2 sessões de revisão e feedback sem custo adicional. Após estas sessões iniciais, haverá uma taxa de R$ 50 por cada 30 min adicionais de revisão.",
   },
   {
-    question: "How to get support for the product?",
+    question: "O preço inclui o domínio e a hospedagem?",
     answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+      "O preço do domínio e da hospedagem varia e será determinado durante o levantamento de requisitos. Estes são custos extras e não estão incluídos no preço do plano. No entanto, o plano de Domínio (.com.br) + hospedagem é por conta da empresa no primeiro ano.",
   },
 ];
 
@@ -35,11 +35,9 @@ export const FAQ = () => (
     >
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
-          <p className="mb-7 custom-block-subtitle text-center">
-            Have any questions?
-          </p>
+          <p className="mb-7 custom-block-subtitle text-center">Dúvidas?</p>
           <h2 className="mb-16 custom-block-big-title text-center">
-            Frequently Asked Questions
+            Perguntas Frequentes
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
             {FAQData.map((item, index) => (
@@ -92,7 +90,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         >
           <path
             d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
-            stroke="#4F46E5"
+            stroke="#FF874D"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
