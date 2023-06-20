@@ -17,14 +17,14 @@ const depoimentosData = [
     customerName: "Yadira",
     customerTitle: "Estética",
     content:
-      "Estou maravilhada com o resultado. O custo-benefício foi excelente, pois além do desenvolvimento do site, também obtivemos o registro do domínio e a hospedagem, tudo por um preço acessível. Isso nos poupou tempo e esforço, já que não precisamos lidar com questões técnicas complicadas. O processo foi extremamente eficiente, entregando o site dentro do prazo prometido, em apenas 24 horas! Essa agilidade nos permitiu estabelecer uma presença online rapidamente, aumentando nossa visibilidade e atraindo novos clientes.",
+      "Estou maravilhada com o resultado. O custo-benefício foi excelente, pois além do desenvolvimento do site, também obtivemos o registro do domínio e a hospedagem, tudo por um preço acessível. Isso nos poupou tempo e esforço, já que não precisamos lidar com questões técnicas complicadas. O processo foi eficiente, entregando o site dentro do prazo prometido, em apenas 24 horas! Essa agilidade nos permitiu estabelecer uma presença online rapidamente.",
     image: depoimento2,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Ambi",
+    customerName: "David",
+    customerTitle: "Studio de Design",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Sudo has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "Estamos gratos pela dedicação e competência demonstradas pela Sudo. Se você procura um serviço rápido, seguro e ágil, eu recomendo fortemente os serviços desta agência. Eles superaram nossas expectativas. Obrigado, Sudo, por tornar todo o processo uma experiência suave e eficiente!",
     image: depoimento3,
   },
 ];
