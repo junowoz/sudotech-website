@@ -49,7 +49,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-32 sm:mb-32 justify-center">
-            <a href="https://wa.link/xh1lyi" target="_blank">
+            <a href="https://wa.me/+5592992852143?text=Ol%C3%A1%2C%20gostaria%20saber%20sobre%20os%20servi%C3%A7os." target="_blank">
               <div className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0">
                 Entre em contato
               </div>

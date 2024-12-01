@@ -29,7 +29,7 @@ export const Navbar = () => {
                 <SudoLogo />
               </div>
               <div className="text-white font-['Inter'] font-bold text-xl">
-                Sudo
+                Sudo Tech
               </div>
             </div>
           </a>

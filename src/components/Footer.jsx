@@ -12,10 +12,10 @@ const footerData = [
 ];
 
 const contactData = [
-  { label: "WhatsApp", href: "https://wa.link/xh1lyi", ariaLabel: "WhatsApp" },
+  { label: "WhatsApp", href: "https://wa.me/+5592992852143?text=Ol%C3%A1%2C%20gostaria%20saber%20sobre%20os%20servi%C3%A7os.", ariaLabel: "WhatsApp" },
   {
     label: "Email",
-    href: "mailto:sudocontatobr@gmail.com ",
+    href: "mailto:contato@sudotech.com.br",
     ariaLabel: "Email",
   },
 ];
@@ -108,7 +108,7 @@ export const Footer = () => {
             </div>
           </div>
           <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            2023 &copy; Sudo. Todos os direitos reservados
+            2025 &copy; Sudo. Todos os direitos reservados
           </p>
         </div>
       </div>
