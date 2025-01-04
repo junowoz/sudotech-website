@@ -62,7 +62,7 @@ export function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
               key={service.title}
               className="relative overflow-hidden rounded-lg border border-white/10 bg-white/5 p-8 backdrop-blur transition-colors hover:bg-white/10"

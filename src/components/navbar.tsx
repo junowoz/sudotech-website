@@ -4,11 +4,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { SudoLogo } from "./sudo-logo";
 

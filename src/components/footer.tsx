@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { SudoLogo } from "./sudo-logo";
