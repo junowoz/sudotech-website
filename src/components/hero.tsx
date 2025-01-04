@@ -6,11 +6,11 @@ import { ArrowRight } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24">
-      <div className="container relative z-10">
+    <section className="relative overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+      <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <motion.h1
-            className="text-4xl font-bold tracking-tight sm:text-6xl"
+            className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -20,7 +20,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            className="mt-6 text-lg leading-8 text-gray-300"
+            className="mt-6 text-lg leading-8 text-gray-300 md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}

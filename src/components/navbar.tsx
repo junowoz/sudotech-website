@@ -4,9 +4,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { SudoLogo } from "./sudo-logo";
 
@@ -18,7 +20,7 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <nav className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <SudoLogo />
           <span className="font-bold text-xl">Sudo Tech</span>
@@ -46,11 +48,11 @@ export function Navbar() {
         <Link
           href="https://wa.me/+5592992852143?text=Olá,%20gostaria%20saber%20sobre%20os%20serviços"
           target="_blank"
-          className="inline-flex h-9 items-center justify-center rounded-md bg-[#F26522] px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-[#F26522]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#F26522]"
+          className="inline-flex h-9 items-center justify-center rounded-md bg-[#F26522] px-6 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-[#F26522]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#F26522]"
         >
           Contato
         </Link>
-      </div>
+      </nav>
     </motion.header>
   );
 }
