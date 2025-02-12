@@ -12,12 +12,12 @@ const faqs = [
   {
     question: "Quando preciso pagar pelos serviços?",
     answer:
-      "O pagamento será solicitado após a conclusão e aprovação do projeto. Isso é para garantir a total segurança e satisfação do cliente. Todos os preços citados já têm impostos e custos inclusos.",
+      "No pagamento será solicitado o equivalente a 50% do valor, inicialmente, e o outro 50% será após a conclusão e aprovação do projeto. Isso é para garantir a total segurança e satisfação do cliente. Todos os preços citados já têm impostos e custos inclusos.",
   },
   {
     question: "Como funciona o processo de desenvolvimento?",
     answer:
-      "Iniciamos com uma reunião para entender suas necessidades, depois desenvolvemos um protótipo para sua aprovação. Após ajustes, iniciamos o desenvolvimento com entregas incrementais para seu feedback.",
+      "Iniciamos com uma reunião para entender suas necessidades. Após ajustes, iniciamos o desenvolvimento com entregas incrementais para seu feedback.",
   },
   {
     question: "Quanto tempo leva para desenvolver um projeto?",
