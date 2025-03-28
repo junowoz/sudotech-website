@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero";
 import { Services } from "@/components/services";
+import { Portfolio } from "@/components/portfolio";
 import { FAQ } from "@/components/faq";
 import { Footer } from "@/components/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <Portfolio />
       <FAQ />
       <Footer />
       <ScrollToTop />

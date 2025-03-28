@@ -29,11 +29,21 @@ const faqs = [
     answer:
       "Sim, oferecemos suporte técnico após a entrega do projeto. Também disponibilizamos pacotes de manutenção mensal para garantir que seu sistema permaneça atualizado e funcionando perfeitamente.",
   },
+  {
+    question: "Quais tecnologias vocês utilizam?",
+    answer:
+      "Trabalhamos com as tecnologias mais modernas e eficientes do mercado, incluindo Next.js, React, TypeScript, Node.js, e diversas outras ferramentas dependendo das necessidades específicas do seu projeto.",
+  },
+  {
+    question: "É possível fazer modificações durante o desenvolvimento?",
+    answer:
+      "Sim, nosso processo de desenvolvimento é flexível e adaptável. Entendemos que requisitos podem mudar durante o projeto e estamos preparados para acomodar ajustes dentro do escopo combinado.",
+  },
 ];
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-24 sm:py-32">
+    <section id="faq" className="py-16">
       <div className="container">
         <motion.div
           className="mx-auto max-w-4xl text-center"
@@ -45,13 +55,13 @@ export function FAQ() {
           <h2 className="text-3xl font-bold sm:text-4xl">
             Perguntas Frequentes
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-4 text-lg leading-8 text-gray-300">
             Tire suas dúvidas sobre nossos serviços
           </p>
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-16 max-w-3xl"
+          className="mx-auto mt-12 max-w-4xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -60,8 +70,12 @@ export function FAQ() {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
-                <AccordionContent>{faq.answer}</AccordionContent>
+                <AccordionTrigger className="text-left font-medium">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-300">
+                  {faq.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
