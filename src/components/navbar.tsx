@@ -53,7 +53,7 @@ export function Navbar() {
           </NavigationMenu>
 
           <Link
-            href="https://wa.me/+5592992852143?text=Olá,%20gostaria%20saber%20sobre%20os%20serviços"
+            href="https://wa.me/+5592984804052?text=Olá,%20gostaria%20saber%20sobre%20os%20serviços"
             target="_blank"
             className="inline-flex h-9 items-center justify-center rounded-md bg-[#F26522] px-6 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-[#F26522]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#F26522]"
           >

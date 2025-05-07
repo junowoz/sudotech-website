@@ -17,7 +17,7 @@ export function Hero() {
               transition={{ duration: 0.5 }}
             >
               Soluções de software para seu negócio com{" "}
-              <span className="text-[#F26522]">SudoTech</span>
+              <span className="text-[#F26522]">Sudo Tech</span>
             </motion.h1>
 
             <motion.p
@@ -38,7 +38,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <Link
-                href="https://wa.me/+5592992852143?text=Olá,%20gostaria%20saber%20sobre%20os%20serviços"
+                href="https://wa.me/+5592984804052?text=Olá,%20gostaria%20saber%20sobre%20os%20serviços"
                 target="_blank"
                 className="group inline-flex items-center gap-2 rounded-lg bg-[#F26522] px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-[#F26522]/90"
               >

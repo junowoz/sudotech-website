@@ -12,7 +12,7 @@ const footerLinks = [
 const contactLinks = [
   {
     label: "WhatsApp",
-    href: "https://wa.me/+5592992852143?text=Olá,%20gostaria%20saber%20sobre%20os%20serviços",
+    href: "https://wa.me/+5592984804052?text=Olá,%20gostaria%20saber%20sobre%20os%20serviços",
   },
   {
     label: "Email",
@@ -78,6 +78,9 @@ export function Footer() {
             <p className="text-sm text-gray-400">
               &copy; {new Date().getFullYear()} Sudo Tech. Todos os direitos
               reservados.
+            </p>
+            <p className="text-sm text-gray-400 mt-2">
+              CNPJ: 58.279.772/0001-94
             </p>
           </div>
         </div>
