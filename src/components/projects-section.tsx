@@ -4,7 +4,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { useRef } from "react";
-import { ExternalLink, Github, Sparkles } from "lucide-react";
+import {
+  ExternalLink,
+  //  Github,
+  Sparkles,
+} from "lucide-react";
 import { projects } from "@/lib/projects-data";
 import { siteContent } from "@/lib/site-content";
 
@@ -132,7 +136,7 @@ export function ProjectsSection() {
                         <ExternalLink className="w-4 h-4" />
                       </a>
                     )}
-                    {project.github && (
+                    {/* {project.github && (
                       <a
                         href={project.github}
                         target="_blank"
@@ -142,7 +146,7 @@ export function ProjectsSection() {
                         <Github className="w-4 h-4" />
                         Código
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </motion.div>
@@ -189,7 +193,7 @@ export function ProjectsSection() {
                           <ExternalLink className="w-3 h-3" />
                         </a>
                       )}
-                      {project.github && (
+                      {/* {project.github && (
                         <a
                           href={project.github}
                           target="_blank"
@@ -199,7 +203,7 @@ export function ProjectsSection() {
                           <Github className="w-3 h-3" />
                           GitHub
                         </a>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>
