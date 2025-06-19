@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import {
   Mail,
   MapPin,
-  Send,
+  // Send,
   Sparkles,
   Clock,
   MessageCircle,

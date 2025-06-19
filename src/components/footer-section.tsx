@@ -4,9 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  Instagram,
-  Linkedin,
-  Github,
+  // Instagram,
+  // Linkedin,
+  // Github,
   Mail,
   Phone,
   MapPin,
