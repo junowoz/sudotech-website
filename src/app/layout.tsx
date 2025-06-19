@@ -1,12 +1,71 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import { ThemeProvider } from "@/contexts/theme-context";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
 
 export const metadata: Metadata = {
-  title: "Sudo Tech - Desenvolvimento de Software e Sites",
-  description: "Desenvolvimento de software e sites profissionais",
+  title: "Sudo Tech | Fábrica de Software & Design",
+  description:
+    "Desenvolvemos soluções digitais sob medida para empresas que querem crescer. Software, apps móveis, sistemas web e consultoria tecnológica.",
+  keywords:
+    "desenvolvimento software, aplicativo móvel, sistema web, consultoria tecnologia, fábrica software, inovação, Brasil, agência digital, software house",
+  authors: [{ name: "Sudo Tech" }],
+  creator: "Sudo Tech",
+  publisher: "Sudo Tech",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://sudotech.com.br"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Sudo Tech | Fábrica de Software & Design",
+    description:
+      "Transformamos ideias em software que funciona. Desenvolvimento sob medida para impulsionar seu negócio.",
+    url: "https://sudotech.com.br",
+    siteName: "Sudo Tech",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Sudo Tech - Fábrica de Software",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sudo Tech | Fábrica de Software & Design",
+    description: "Transformamos ideias em software que funciona.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -15,11 +74,61 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="dark scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#fb923c" />
+      </head>
       <body
-        className={`${inter.className} bg-[#26272b] text-white antialiased`}
+        className={`${inter.variable} ${spaceGrotesk.variable} font-sans bg-white dark:bg-black text-black dark:text-white antialiased selection:bg-primary selection:text-white dark:selection:text-black`}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
+
+        {/* Schema.org structured data */}
+        <Script
+          id="schema-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Sudo Tech",
+              description: "Fábrica de Software & Design",
+              url: "https://sudotech.com.br",
+              logo: "https://sudotech.com.br/sudo-tech.svg",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+55-92-98480-4052",
+                contactType: "customer service",
+                areaServed: "BR",
+                availableLanguage: ["Portuguese"],
+              },
+              sameAs: [
+                "https://www.linkedin.com/company/sudotech",
+                "https://github.com/sudotech",
+                "https://instagram.com/sudotech",
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );
