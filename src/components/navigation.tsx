@@ -33,7 +33,65 @@ export function Navigation() {
     <>
       {/* Desktop Navigation - Island Style */}
       <motion.header
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden md:block"
+        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden lg:block"
+        initial={{ y: -100, x: "-50%" }}
+        animate={{ y: 0, x: "-50%" }}
+        transition={{ duration: 0.5 }}
+      >
+        <nav
+          className={`px-6 py-3 rounded-full transition-all duration-300 min-w-[600px] ${
+            scrolled
+              ? "glass border border-black/10 dark:border-white/10 shadow-lg"
+              : "bg-white/80 dark:bg-black/80 backdrop-blur-md border border-black/10 dark:border-white/10"
+          }`}
+        >
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <Link href="/" className="flex items-center flex-shrink-0">
+              <Image
+                src="/sudo-tech.svg"
+                alt="Sudo Tech"
+                width={32}
+                height={32}
+                className="invert dark:invert-0"
+              />
+            </Link>
+
+            {/* Nav Items - Centered */}
+            <div className="flex items-center gap-1 flex-1 justify-center mx-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-all whitespace-nowrap"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Right Side Actions */}
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <ThemeToggle />
+
+              {/* Divider */}
+              <div className="w-px h-6 bg-black/10 dark:bg-white/10" />
+
+              {/* CTA Button */}
+              <Link
+                href="#contato"
+                className="px-5 py-2 bg-primary text-white dark:text-black font-medium text-sm rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
+              >
+                {siteContent.navigation.start}
+              </Link>
+            </div>
+          </div>
+        </nav>
+      </motion.header>
+
+      {/* Tablet Navigation - Simplified Island */}
+      <motion.header
+        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden md:block lg:hidden"
         initial={{ y: -100, x: "-50%" }}
         animate={{ y: 0, x: "-50%" }}
         transition={{ duration: 0.5 }}
@@ -45,9 +103,9 @@ export function Navigation() {
               : "bg-white/80 dark:bg-black/80 backdrop-blur-md border border-black/10 dark:border-white/10"
           }`}
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center mr-6">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/sudo-tech.svg"
                 alt="Sudo Tech"
@@ -57,32 +115,47 @@ export function Navigation() {
               />
             </Link>
 
-            {/* Nav Items */}
-            <div className="flex items-center gap-1">
-              {navItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-all"
-                >
-                  {item.label}
-                </Link>
-              ))}
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+
+              {/* CTA Button */}
+              <Link
+                href="#contato"
+                className="px-5 py-2 bg-primary text-white dark:text-black font-medium text-sm rounded-full hover:opacity-90 transition-opacity"
+              >
+                {siteContent.navigation.start}
+              </Link>
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="relative w-10 h-10 flex items-center justify-center"
+              >
+                <AnimatePresence mode="wait">
+                  {isOpen ? (
+                    <motion.div
+                      key="close"
+                      initial={{ rotate: -90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: 90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <X className="w-6 h-6" />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="menu"
+                      initial={{ rotate: 90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: -90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Menu className="w-6 h-6" />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </button>
             </div>
-
-            {/* Divider */}
-            <div className="w-px h-6 bg-black/10 dark:bg-white/10 mx-2" />
-
-            {/* Theme Toggle */}
-            <ThemeToggle />
-
-            {/* CTA Button */}
-            <Link
-              href="#contato"
-              className="ml-2 px-5 py-2 bg-primary text-white dark:text-black font-medium text-sm rounded-full hover:opacity-90 transition-opacity"
-            >
-              {siteContent.navigation.startProject}
-            </Link>
           </div>
         </nav>
       </motion.header>
@@ -154,7 +227,7 @@ export function Navigation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 z-40 md:hidden"
+            className="fixed inset-0 z-40 lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -203,7 +276,7 @@ export function Navigation() {
                     onClick={() => setIsOpen(false)}
                     className="inline-block px-8 py-4 bg-primary text-white dark:text-black font-medium rounded-full hover:opacity-90 transition-opacity"
                   >
-                    {siteContent.navigation.startProject}
+                    {siteContent.navigation.start}
                   </Link>
                 </motion.div>
               </div>

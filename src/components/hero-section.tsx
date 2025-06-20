@@ -88,9 +88,9 @@ export function HeroSection() {
               />
             </span>
           </span>
-          <span className="block text-black/80 dark:text-white/80 mt-2">
+          {/* <span className="block text-black/80 dark:text-white/80 mt-2">
             {siteContent.hero.title.line3}
-          </span>
+          </span> */}
         </motion.h1>
 
         {/* Subtitle */}

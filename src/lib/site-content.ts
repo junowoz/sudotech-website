@@ -2,15 +2,14 @@ export const siteContent = {
   hero: {
     badge: "Fábrica de Software",
     title: {
-      line1: "Transformamos",
-      line2: "ideias em",
+      line1: "Sudo Tech",
+      line2: "criamos",
       highlight: "software",
-      line3: "que funciona.",
+      // line3: "sob medida.",
     },
-    subtitle:
-      "Desenvolvemos soluções digitais sob medida para empresas que querem crescer.",
+    subtitle: "Desenvolvemos tecnología para organizações que buscam inovação.",
     cta: {
-      primary: "Iniciar Projeto",
+      primary: "Começar",
       secondary: "Ver Projetos",
     },
   },
@@ -18,7 +17,7 @@ export const siteContent = {
   services: {
     badge: "O que fazemos",
     title: "Serviços",
-    subtitle: "Tecnologia e design para resolver problemas reais de negócios.",
+    subtitle: "Tecnologia e design para resolver problemas reais.",
     cta: "Precisa de algo específico? Vamos conversar.",
   },
 
@@ -36,7 +35,7 @@ export const siteContent = {
       line2: "com DNA digital",
     },
     subtitle:
-      "Somos uma equipe de desenvolvedores, designers e estrategistas focados em criar produtos digitais que funcionam.",
+      "Somos uma equipe de desenvolvedores e designers focados em criar produtos que resolvam problemas reais.",
 
     mission: {
       title: "Nossa Missão",
@@ -109,6 +108,6 @@ export const siteContent = {
     projects: "Projetos",
     about: "Sobre",
     contact: "Contato",
-    startProject: "Iniciar Projeto",
+    start: "Começar",
   },
 };
