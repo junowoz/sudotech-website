@@ -39,7 +39,7 @@ export function Navigation() {
         transition={{ duration: 0.5 }}
       >
         <nav
-          className={`px-6 py-3 rounded-full transition-all duration-300 min-w-[600px] ${
+          className={`px-6 py-3 rounded-full transition-all duration-300 w-full max-w-4xl mx-6 ${
             scrolled
               ? "glass border border-black/10 dark:border-white/10 shadow-lg"
               : "bg-white/80 dark:bg-black/80 backdrop-blur-md border border-black/10 dark:border-white/10"
