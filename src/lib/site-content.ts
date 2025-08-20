@@ -53,9 +53,9 @@ export const siteContent = {
     },
 
     stats: [
-      { value: "10+", label: "Projetos Entregues" },
+      { value: "6+", label: "Projetos Entregues" },
+      { value: "4+", label: "Anos no Mercado" },
       { value: "100%", label: "Clientes Satisfeitos" },
-      { value: "5+", label: "Anos no Mercado" },
       { value: "100%", label: "Entregas no Prazo" },
     ],
 
