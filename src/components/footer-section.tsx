@@ -135,11 +135,11 @@ export function FooterSection() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://wa.me/5592984804052"
+                  href="https://wa.me/+5592992852143"
                   className="flex items-center gap-3 text-black/60 dark:text-white/60 hover:text-primary text-sm transition-colors group"
                 >
                   <Phone className="w-4 h-4 text-orange-500" />
-                  <span>+55 92 98480-4052</span>
+                  <span>+55 92 99285-2143</span>
                 </a>
               </li>
               <li>
