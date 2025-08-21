@@ -22,8 +22,8 @@ export function ContactSection() {
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      value: "+55 92 98480-4052",
-      link: "https://wa.me/5592984804052",
+      value: "+55 92 9285-2143",
+      link: "https://wa.me/5592992852143",
       color: "from-green-500 to-emerald-500",
       description: "Resposta rápida",
     },
