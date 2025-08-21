@@ -116,7 +116,7 @@ export default function RootLayout({
               logo: "https://sudotech.com.br/sudo-tech.svg",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+55-92-98480-4052",
+                telephone: "+55-92-99285-2143",
                 contactType: "customer service",
                 areaServed: "BR",
                 availableLanguage: ["Portuguese"],
