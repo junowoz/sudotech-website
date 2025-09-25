@@ -38,7 +38,7 @@ export function AboutSection() {
           className="text-center mb-20"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-black/10 dark:border-white/10 mb-4">
-            <Sparkles className="w-4 h-4 text-orange-500" />
+            <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-black/70 dark:text-white/70">
               {siteContent.about.badge}
             </span>
@@ -162,7 +162,7 @@ export function AboutSection() {
                   className="relative group"
                 >
                   <div className="h-full p-6 rounded-2xl glass border border-black/10 dark:border-white/10 hover:border-primary/20 transition-all">
-                    <Icon className="w-8 h-8 text-orange-500 mb-4" />
+                    <Icon className="w-8 h-8 text-primary mb-4" />
                     <h4 className="text-lg font-space-grotesk font-semibold mb-2">
                       {value.title}
                     </h4>

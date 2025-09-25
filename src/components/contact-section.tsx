@@ -24,7 +24,7 @@ export function ContactSection() {
       title: "WhatsApp",
       value: "+55 92 99285-2143",
       link: "https://wa.me/5592992852143",
-      color: "from-green-500 to-emerald-500",
+      color: "from-amber-500 to-primary",
       description: "Resposta rápida",
     },
     {
@@ -32,21 +32,21 @@ export function ContactSection() {
       title: "Email",
       value: "contato@sudotech.com.br",
       link: "mailto:contato@sudotech.com.br",
-      color: "from-orange-500 to-amber-500",
+      color: "from-amber-500 to-primary",
       description: "Para propostas formais",
     },
     {
       icon: MapPin,
       title: "Localização",
       value: "Manaus, AM - Brasil",
-      color: "from-amber-500 to-orange-500",
+      color: "from-amber-500 to-primary",
       description: "Atendemos todo o Brasil",
     },
     {
       icon: Clock,
       title: "Horário",
       value: "Seg - Sex: 8h às 17h",
-      color: "from-orange-600 to-red-500",
+      color: "from-amber-500 to-primary",
       description: "Horário comercial",
     },
   ];
@@ -69,7 +69,7 @@ export function ContactSection() {
           className="text-center mb-20"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-black/10 dark:border-white/10 mb-4">
-            <Sparkles className="w-4 h-4 text-orange-500" />
+            <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-black/70 dark:text-white/70">
               {siteContent.contact.badge}
             </span>
@@ -120,7 +120,7 @@ export function ContactSection() {
                         <div
                           className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${info.color} bg-opacity-10`}
                         >
-                          <Icon className="w-6 h-6 text-black dark:text-white" />
+                          <Icon className="w-6 h-6 text-white" />
                         </div>
 
                         <div>
@@ -143,7 +143,7 @@ export function ContactSection() {
                       <div
                         className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${info.color} bg-opacity-10`}
                       >
-                        <Icon className="w-6 h-6 text-black dark:text-white" />
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
 
                       <div>

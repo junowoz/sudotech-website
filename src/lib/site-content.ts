@@ -91,8 +91,7 @@ export const siteContent = {
   },
 
   footer: {
-    description:
-      "Fábrica de software focada em transformar ideias em produtos digitais.",
+    description: "Criamos software.",
     quickLinks: "Links Rápidos",
     services: "Nossos Serviços",
     contact: "Contato",
@@ -106,7 +105,7 @@ export const siteContent = {
     home: "Início",
     services: "Serviços",
     projects: "Projetos",
-    about: "Sobre",
+    // about: "Sobre",
     contact: "Contato",
     start: "Começar",
   },

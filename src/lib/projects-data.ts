@@ -9,7 +9,7 @@ export const projects = [
     tech: ["Web", "PWA", "Mobile"],
     link: "https://portal.onde.social",
     featured: false,
-    color: "from-amber-500 to-orange-500",
+    color: "from-amber-500 to-primary",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const projects = [
     tech: ["Web", "PWA", "AI Integration"],
     link: "https://vitae.cv",
     featured: false,
-    color: "from-orange-600 to-red-500",
+    color: "from-amber-500 to-primary",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const projects = [
     tech: ["Web", "Plataforma"],
     link: "https://pgv.sudotech.com.br",
     featured: false,
-    color: "from-red-500 to-orange-600",
+    color: "from-amber-500 to-primary",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const projects = [
     tech: ["Web"],
     link: "https://amzgeradores.com.br",
     featured: false,
-    color: "from-red-500 to-orange-600",
+    color: "from-amber-500 to-primary",
   },
   // {
   //   id: 4,
@@ -56,8 +56,7 @@ export const projects = [
   //   tech: ["Web", "PWA", "Mobile"],
   //   link: "https://simof.sudotech.com.br",
   //   featured: false,
-  //   color: "from-red-500 to-orange-600",
-  // },
+  //color: "from-amber-500 to-primary",  // },
   // {
   //   id: 5,
   //   title: "GerontoChat",
@@ -67,8 +66,7 @@ export const projects = [
   //   tech: ["Web", "PWA", "Mobile"],
   //   link: "https://gerontochat.com",
   //   featured: false,
-  //   color: "from-red-500 to-orange-600",
-  // },
+  //color: "from-amber-500 to-primary",  // },
   // {
   //   id: 6,
   //   title: "NexGás",
@@ -79,8 +77,7 @@ export const projects = [
   //   tech: ["Web", "PWA", "Mobile"],
   //   link: "https://nexgas.com",
   //   featured: false,
-  //   color: "from-red-500 to-orange-600",
-  // },
+  //color: "from-amber-500 to-primary",  // },
   {
     id: 5,
     title: "Velooh",
@@ -90,7 +87,7 @@ export const projects = [
     tech: ["Web", "PWA", "Mobile"],
     link: "https://velooh.com",
     featured: false,
-    color: "from-amber-600 to-yellow-500",
+    color: "from-amber-500 to-primary",
   },
   {
     id: 6,
@@ -102,6 +99,6 @@ export const projects = [
     tech: ["Web", "PWA", "Mobile"],
     link: "https://inovatec.junowoz.com",
     featured: false,
-    color: "from-red-600 to-orange-500",
+    color: "from-amber-500 to-primary",
   },
 ];

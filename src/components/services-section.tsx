@@ -30,7 +30,7 @@ export function ServicesSection() {
           className="text-center mb-20"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-black/10 dark:border-white/10 mb-4">
-            <Sparkles className="w-4 h-4 text-orange-500" />
+            <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-black/70 dark:text-white/70">
               {siteContent.services.badge}
             </span>
@@ -70,7 +70,7 @@ export function ServicesSection() {
                     <div
                       className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${service.gradient} bg-opacity-10`}
                     >
-                      <Icon className="w-6 h-6 text-black dark:text-white" />
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
                   </div>
 

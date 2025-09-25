@@ -51,7 +51,7 @@ export function ProjectsSection() {
           className="text-center mb-20"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-black/10 dark:border-white/10 mb-4">
-            <Sparkles className="w-4 h-4 text-orange-500" />
+            <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-black/70 dark:text-white/70">
               {siteContent.projects.badge}
             </span>
@@ -101,7 +101,7 @@ export function ProjectsSection() {
                 {/* Content */}
                 <div className="flex-1 space-y-6">
                   <div>
-                    <span className="text-sm font-medium text-orange-600 dark:text-orange-400">
+                    <span className="text-sm font-medium text-prmiary">
                       {project.category}
                     </span>
                     <h3 className="text-3xl md:text-4xl font-space-grotesk font-bold mt-2">
@@ -171,7 +171,7 @@ export function ProjectsSection() {
                   />
 
                   <div className="relative z-10">
-                    <span className="text-sm font-medium text-orange-600 dark:text-orange-400">
+                    <span className="text-sm font-medium text-primary">
                       {project.category}
                     </span>
                     <h3 className="text-xl font-space-grotesk font-semibold mt-2 mb-3">

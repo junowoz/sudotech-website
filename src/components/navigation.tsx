@@ -12,7 +12,7 @@ const navItems = [
   { label: siteContent.navigation.home, href: "#inicio" },
   { label: siteContent.navigation.services, href: "#servicos" },
   { label: siteContent.navigation.projects, href: "#projetos" },
-  { label: siteContent.navigation.about, href: "#sobre" },
+  // { label: siteContent.navigation.about, href: "#sobre" },
   { label: siteContent.navigation.contact, href: "#contato" },
 ];
 

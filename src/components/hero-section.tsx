@@ -58,7 +58,7 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-black/10 dark:border-white/10 mb-8"
         >
-          <Sparkles className="w-4 h-4 text-orange-500" />
+          <Sparkles className="w-4 h-4 text-primary" />
           <span className="text-sm font-medium text-black/70 dark:text-white/70">
             {siteContent.hero.badge}
           </span>

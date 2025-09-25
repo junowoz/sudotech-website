@@ -19,7 +19,7 @@ const quickLinks = [
   { label: siteContent.navigation.home, href: "#inicio" },
   { label: siteContent.navigation.services, href: "#servicos" },
   { label: siteContent.navigation.projects, href: "#projetos" },
-  { label: siteContent.navigation.about, href: "#sobre" },
+  // { label: siteContent.navigation.about, href: "#sobre" },
   { label: siteContent.navigation.contact, href: "#contato" },
 ];
 
@@ -138,7 +138,7 @@ export function FooterSection() {
                   href="https://wa.me/+5592992852143"
                   className="flex items-center gap-3 text-black/60 dark:text-white/60 hover:text-primary text-sm transition-colors group"
                 >
-                  <Phone className="w-4 h-4 text-orange-500" />
+                  <Phone className="w-4 h-4 text-primary" />
                   <span>+55 92 99285-2143</span>
                 </a>
               </li>
@@ -147,12 +147,12 @@ export function FooterSection() {
                   href="mailto:contato@sudotech.com.br"
                   className="flex items-center gap-3 text-black/60 dark:text-white/60 hover:text-primary text-sm transition-colors group"
                 >
-                  <Mail className="w-4 h-4 text-amber-500" />
+                  <Mail className="w-4 h-4 text-primary" />
                   <span>contato@sudotech.com.br</span>
                 </a>
               </li>
               <li className="flex items-center gap-3 text-black/60 dark:text-white/60 text-sm">
-                <MapPin className="w-4 h-4 text-orange-600" />
+                <MapPin className="w-4 h-4 text-primary" />
                 <span>Manaus, AM - Brasil</span>
               </li>
             </ul>
