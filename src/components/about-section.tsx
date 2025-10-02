@@ -53,7 +53,7 @@ export function AboutSection() {
             <br />
             {siteContent.about.title.line2}
           </h2>
-          <p className="text-lg text-black/60 dark:text-white/60 max-w-3xl mx-auto">
+          <p className="text-lg text-black/60 dark:text-white/80 max-w-3xl mx-auto">
             {siteContent.about.subtitle}
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ export function AboutSection() {
               <h3 className="text-3xl font-space-grotesk font-bold mb-4">
                 {siteContent.about.mission.title}
               </h3>
-              <p className="text-black/60 dark:text-white/60 leading-relaxed">
+              <p className="text-black/60 dark:text-white/80 leading-relaxed">
                 {siteContent.about.mission.text}
               </p>
             </div>
@@ -82,7 +82,7 @@ export function AboutSection() {
               <h3 className="text-3xl font-space-grotesk font-bold mb-4">
                 {siteContent.about.vision.title}
               </h3>
-              <p className="text-black/60 dark:text-white/60 leading-relaxed">
+              <p className="text-black/60 dark:text-white/80 leading-relaxed">
                 {siteContent.about.vision.text}
               </p>
             </div>
@@ -92,7 +92,7 @@ export function AboutSection() {
               <h3 className="text-3xl font-space-grotesk font-bold mb-4">
                 {siteContent.about.culture.title}
               </h3>
-              <p className="text-black/60 dark:text-white/60 leading-relaxed">
+              <p className="text-black/60 dark:text-white/80 leading-relaxed">
                 {siteContent.about.culture.text}
               </p>
             </div>
@@ -119,7 +119,7 @@ export function AboutSection() {
                     <h4 className="text-4xl font-space-grotesk font-bold mb-2 relative z-10">
                       {stat.value}
                     </h4>
-                    <p className="text-sm text-black/60 dark:text-white/60 relative z-10">
+                    <p className="text-sm text-black/60 dark:text-white/80 relative z-10">
                       {stat.label}
                     </p>
                   </div>
@@ -166,7 +166,7 @@ export function AboutSection() {
                     <h4 className="text-lg font-space-grotesk font-semibold mb-2">
                       {value.title}
                     </h4>
-                    <p className="text-sm text-black/60 dark:text-white/60">
+                    <p className="text-sm text-black/60 dark:text-white/80">
                       {value.description}
                     </p>
                   </div>

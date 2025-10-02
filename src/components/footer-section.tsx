@@ -48,14 +48,14 @@ export function FooterSection() {
                 alt="Sudo Tech"
                 width={120}
                 height={40}
-                className="h-10 w-auto invert dark:invert-0"
+                className="h-10 w-auto dark:invert"
               />
             </Link>
-            <p className="text-black/60 dark:text-white/60 text-sm leading-relaxed">
+            <p className="text-black/60 dark:text-white/80 text-sm leading-relaxed">
               {siteContent.footer.description}
             </p>
             <div className="space-y-2">
-              <div className="flex items-center gap-2 text-sm text-black/60 dark:text-white/60">
+              <div className="flex items-center gap-2 text-sm text-black/60 dark:text-white/80">
                 <Building2 className="w-4 h-4" />
                 <span className="font-medium">{siteContent.footer.cnpj}</span>
               </div>
@@ -99,7 +99,7 @@ export function FooterSection() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-black/60 dark:text-white/60 hover:text-primary text-sm transition-colors"
+                    className="text-black/60 dark:text-white/80 hover:text-primary text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -118,7 +118,7 @@ export function FooterSection() {
                 <li key={service.label}>
                   <Link
                     href={service.href}
-                    className="text-black/60 dark:text-white/60 hover:text-primary text-sm transition-colors"
+                    className="text-black/60 dark:text-white/80 hover:text-primary text-sm transition-colors"
                   >
                     {service.label}
                   </Link>
@@ -136,7 +136,7 @@ export function FooterSection() {
               <li>
                 <a
                   href="https://wa.me/+5592992852143"
-                  className="flex items-center gap-3 text-black/60 dark:text-white/60 hover:text-primary text-sm transition-colors group"
+                  className="flex items-center gap-3 text-black/60 dark:text-white/80 hover:text-primary text-sm transition-colors group"
                 >
                   <Phone className="w-4 h-4 text-primary" />
                   <span>+55 92 99285-2143</span>
@@ -145,13 +145,13 @@ export function FooterSection() {
               <li>
                 <a
                   href="mailto:contato@sudotech.com.br"
-                  className="flex items-center gap-3 text-black/60 dark:text-white/60 hover:text-primary text-sm transition-colors group"
+                  className="flex items-center gap-3 text-black/60 dark:text-white/80 hover:text-primary text-sm transition-colors group"
                 >
                   <Mail className="w-4 h-4 text-primary" />
                   <span>contato@sudotech.com.br</span>
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-black/60 dark:text-white/60 text-sm">
+              <li className="flex items-center gap-3 text-black/60 dark:text-white/80 text-sm">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span>Manaus, AM - Brasil</span>
               </li>
@@ -165,13 +165,14 @@ export function FooterSection() {
         <div className="container mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
-              <p className="text-sm text-black/40 dark:text-white/40">
+              <p className="text-sm text-black/40 dark:text-white/80">
                 © {new Date().getFullYear()} Sudo Tech.{" "}
                 {siteContent.footer.rights}
               </p>
             </div>
 
-            <div className="flex items-center gap-6 text-sm text-black/40 dark:text-white/40">
+            {/* Privacidade e Termos */}
+            {/* <div className="flex items-center gap-6 text-sm text-black/40 dark:text-white/40">
               <Link
                 href="/privacidade"
                 className="hover:text-primary transition-colors"
@@ -184,7 +185,7 @@ export function FooterSection() {
               >
                 {siteContent.footer.terms}
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -192,7 +193,7 @@ export function FooterSection() {
       {/* Back to Top */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 p-3 rounded-full bg-primary text-white dark:text-black hover:scale-110 transition-transform z-40 shadow-lg"
+        className="fixed bottom-8 right-8 p-3 rounded-full bg-primary text-white hover:scale-110 transition-transform z-40 shadow-lg"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1 }}

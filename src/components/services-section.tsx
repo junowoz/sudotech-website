@@ -41,7 +41,7 @@ export function ServicesSection() {
               {siteContent.services.title}
             </span>
           </h2>
-          <p className="text-lg text-black/60 dark:text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-black/60 dark:text-white/80 max-w-2xl mx-auto">
             {siteContent.services.subtitle}
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ export function ServicesSection() {
                     <ArrowUpRight className="w-4 h-4 opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
                   </h3>
 
-                  <p className="text-black/60 dark:text-white/60 mb-6">
+                  <p className="text-black/60 dark:text-white/80 mb-6">
                     {service.description}
                   </p>
 
@@ -116,12 +116,12 @@ export function ServicesSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <p className="text-black/60 dark:text-white/60 mb-6">
+          <p className="text-black/60 dark:text-white/80 mb-6">
             {siteContent.services.cta}
           </p>
           <a
             href="#contato"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white dark:text-black font-medium rounded-full hover:scale-105 transition-transform"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-medium rounded-full hover:scale-105 transition-transform"
           >
             Fale com um especialista
             <ArrowUpRight className="w-4 h-4" />

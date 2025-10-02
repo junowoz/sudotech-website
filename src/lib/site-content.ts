@@ -1,13 +1,13 @@
 export const siteContent = {
   hero: {
-    badge: "Fábrica de Software",
+    badge: "Ideia -> Design -> Engenharia",
     title: {
       line1: "Sudo Tech",
       line2: "criamos",
-      highlight: "software",
+      highlight: "sistemas",
       // line3: "sob medida.",
     },
-    subtitle: "Desenvolvemos tecnología para organizações que buscam inovação.",
+    subtitle: "Estúdio de Software e Design.",
     cta: {
       primary: "Começar",
       secondary: "Ver Projetos",
@@ -24,13 +24,12 @@ export const siteContent = {
   projects: {
     badge: "Nosso Trabalho",
     title: "Projetos recentes",
-    subtitle: "Software que entregamos e que está rodando em produção.",
   },
 
   about: {
     badge: "Quem Somos",
     title: {
-      line1: "Uma fábrica de",
+      line1: "Um studio de",
       highlight: "software",
       line2: "com DNA digital",
     },
@@ -91,7 +90,7 @@ export const siteContent = {
   },
 
   footer: {
-    description: "Criamos software.",
+    description: "Sudo Tech",
     quickLinks: "Links Rápidos",
     services: "Nossos Serviços",
     contact: "Contato",

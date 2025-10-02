@@ -53,7 +53,7 @@ export function Navigation() {
                 alt="Sudo Tech"
                 width={32}
                 height={32}
-                className="invert dark:invert-0"
+                className="dark:invert"
               />
             </Link>
 
@@ -80,7 +80,7 @@ export function Navigation() {
               {/* CTA Button */}
               <Link
                 href="#contato"
-                className="px-5 py-2 bg-primary text-white dark:text-black font-medium text-sm rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
+                className="px-5 py-2 bg-primary text-white font-medium text-sm rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
               >
                 {siteContent.navigation.start}
               </Link>
@@ -111,7 +111,7 @@ export function Navigation() {
                 alt="Sudo Tech"
                 width={32}
                 height={32}
-                className="invert dark:invert-0"
+                className="dark:invert"
               />
             </Link>
 
@@ -121,7 +121,7 @@ export function Navigation() {
               {/* CTA Button */}
               <Link
                 href="#contato"
-                className="px-5 py-2 bg-primary text-white dark:text-black font-medium text-sm rounded-full hover:opacity-90 transition-opacity"
+                className="px-5 py-2 bg-primary text-white font-medium text-sm rounded-full hover:opacity-90 transition-opacity"
               >
                 {siteContent.navigation.start}
               </Link>
@@ -182,7 +182,7 @@ export function Navigation() {
                 alt="Sudo Tech"
                 width={32}
                 height={32}
-                className="invert dark:invert-0"
+                className="dark:invert"
               />
             </Link>
 
@@ -274,7 +274,7 @@ export function Navigation() {
                   <Link
                     href="#contato"
                     onClick={() => setIsOpen(false)}
-                    className="inline-block px-8 py-4 bg-primary text-white dark:text-black font-medium rounded-full hover:opacity-90 transition-opacity"
+                    className="inline-block px-8 py-4 bg-primary text-white font-medium rounded-full hover:opacity-90 transition-opacity"
                   >
                     {siteContent.navigation.start}
                   </Link>

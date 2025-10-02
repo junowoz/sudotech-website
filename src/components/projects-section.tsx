@@ -62,9 +62,6 @@ export function ProjectsSection() {
               {siteContent.projects.title}
             </span>
           </h2>
-          <p className="text-lg text-black/60 dark:text-white/60 max-w-2xl mx-auto">
-            {siteContent.projects.subtitle}
-          </p>
         </motion.div>
 
         {/* Featured Projects */}
@@ -82,7 +79,7 @@ export function ProjectsSection() {
                 }`}
               >
                 {/* Image */}
-                <div className="flex-1 relative group">
+                <div className="w-full flex-1 relative group">
                   <div
                     className={`absolute -inset-4 bg-gradient-to-r ${project.color} rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity`}
                   />
@@ -94,7 +91,7 @@ export function ProjectsSection() {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                 </div>
 
@@ -109,7 +106,7 @@ export function ProjectsSection() {
                     </h3>
                   </div>
 
-                  <p className="text-lg text-black/60 dark:text-white/60">
+                  <p className="text-lg text-black/60 dark:text-white/80">
                     {project.description}
                   </p>
 
@@ -130,7 +127,7 @@ export function ProjectsSection() {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white dark:text-black font-medium rounded-full hover:scale-105 transition-transform"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-medium rounded-full hover:scale-105 transition-transform"
                       >
                         Ver Projeto
                         <ExternalLink className="w-4 h-4" />
@@ -177,7 +174,7 @@ export function ProjectsSection() {
                     <h3 className="text-xl font-space-grotesk font-semibold mt-2 mb-3">
                       {project.title}
                     </h3>
-                    <p className="text-black/60 dark:text-white/60 mb-4">
+                    <p className="text-black/60 dark:text-white/80 mb-4">
                       {project.description}
                     </p>
 

@@ -15,11 +15,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Sudo Tech | Fábrica de Software & Design",
+  title: "Sudo Tech | Estúdio de Software & Design",
   description:
-    "Desenvolvemos soluções digitais sob medida para empresas que querem crescer. Software, apps móveis, sistemas web e consultoria tecnológica.",
+    "Criamos sistemas",
   keywords:
-    "desenvolvimento software, aplicativo móvel, sistema web, consultoria tecnologia, fábrica software, inovação, Brasil, agência digital, software house",
+    "desenvolvimento software, aplicativo móvel, sistema web, consultoria tecnologia, estúdio software, inovação, Brasil, agência digital, software house",
   authors: [{ name: "Sudo Tech" }],
   creator: "Sudo Tech",
   publisher: "Sudo Tech",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Sudo Tech | Fábrica de Software & Design",
+    title: "Sudo Tech | Estúdio de Software & Design",
     description:
-      "Transformamos ideias em software que funciona. Desenvolvimento sob medida para impulsionar seu negócio.",
+      "Criamos sistemas",
     url: "https://sudotech.com.br",
     siteName: "Sudo Tech",
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sudo Tech - Fábrica de Software",
+        alt: "Sudo Tech | Estúdio de Software & Design",
       },
     ],
     locale: "pt_BR",
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sudo Tech | Fábrica de Software & Design",
-    description: "Transformamos ideias em software que funciona.",
+    title: "Sudo Tech | Estúdio de Software & Design",
+    description: "Criamos sistemas",
     images: ["/og-image.png"],
   },
   robots: {
@@ -111,7 +111,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Sudo Tech",
-              description: "Fábrica de Software & Design",
+              description: "Estúdio de Software & Design",
               url: "https://sudotech.com.br",
               logo: "https://sudotech.com.br/sudo-tech.svg",
               contactPoint: {

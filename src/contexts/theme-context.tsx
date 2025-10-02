@@ -12,15 +12,20 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
-    // Check for saved theme preference or default to dark
+    // Verifica se há um tema salvo no localStorage
     const savedTheme = localStorage.getItem("theme") as Theme | null;
+
+    // Verifica a preferência do sistema operacional do usuário
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
 
+    // Lógica de decisão:
+    // 1. Usa o tema salvo, se existir.
+    // 2. Se não, usa a preferência do sistema (dark ou light).
     const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
     setTheme(initialTheme);
     document.documentElement.classList.toggle("dark", initialTheme === "dark");

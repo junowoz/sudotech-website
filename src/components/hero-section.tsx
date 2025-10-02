@@ -95,7 +95,7 @@ export function HeroSection() {
 
         {/* Subtitle */}
         <motion.p
-          className="mt-8 text-lg md:text-xl text-black/60 dark:text-white/60 max-w-2xl mx-auto"
+          className="mt-8 text-lg md:text-xl text-black/60 dark:text-white/80 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -112,7 +112,7 @@ export function HeroSection() {
         >
           <Link
             href="#contato"
-            className="group relative px-8 py-4 bg-primary text-white dark:text-black font-medium rounded-full overflow-hidden transition-all hover:scale-105"
+            className="group relative px-8 py-4 bg-primary text-white font-medium rounded-full overflow-hidden transition-all hover:scale-105"
           >
             <span className="relative z-10 flex items-center gap-2">
               {siteContent.hero.cta.primary}

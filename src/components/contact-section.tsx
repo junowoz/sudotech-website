@@ -82,7 +82,7 @@ export function ContactSection() {
               {siteContent.contact.title.highlight}
             </span>
           </h2>
-          <p className="text-lg text-black/60 dark:text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-black/60 dark:text-white/80 max-w-2xl mx-auto">
             {siteContent.contact.subtitle}
           </p>
         </motion.div>
@@ -130,7 +130,7 @@ export function ContactSection() {
                           <p className="text-black dark:text-white font-medium text-sm">
                             {info.value}
                           </p>
-                          <p className="text-sm text-black/60 dark:text-white/60 mt-1">
+                          <p className="text-sm text-black/60 dark:text-white/80 mt-1">
                             {info.description}
                           </p>
                         </div>
@@ -153,7 +153,7 @@ export function ContactSection() {
                         <p className="text-black dark:text-white font-medium text-sm">
                           {info.value}
                         </p>
-                        <p className="text-sm text-black/60 dark:text-white/60 mt-1">
+                        <p className="text-sm text-black/60 dark:text-white/80 mt-1">
                           {info.description}
                         </p>
                       </div>
@@ -176,7 +176,7 @@ export function ContactSection() {
             href="https://wa.me/5592992852143"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white dark:text-black font-medium rounded-full hover:scale-105 transition-transform"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-medium rounded-full hover:scale-105 transition-transform"
           >
             Iniciar Conversa no WhatsApp
             <MessageCircle className="w-5 h-5" />
