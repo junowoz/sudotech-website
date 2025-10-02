@@ -13,8 +13,8 @@ export const projects = [
   },
   {
     id: 2,
-    title: "PGV - Sistema de Gestão Veicular",
-    category: "Governo",
+    title: "Plataforma de Gerenciamento Veicular (PGV)",
+    category: "ERP",
     description:
       "Sistema completo de gestão veicular com controle de acesso e auditoria para a Polícia Civil.",
     image: "/portfolio/pgv-sistema.jpg",
@@ -25,8 +25,8 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Plataforma de Saúde Digital (FUnATI)",
-    category: "Saúde Digital",
+    title: "Consultoria em Gestão de Plataforma Digital (FUnATI)",
+    category: "Consultoria",
     description:
       "Consultoria para gestão e evolução do Prontuário Eletrônico da Pessoa Idosa (PEP), garantindo interoperabilidade, segurança (LGPD) e suporte técnico.",
     image: "/portfolio/funati-pep.jpg",
