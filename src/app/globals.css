@@ -57,7 +57,9 @@
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 
   /* Custom scrollbar */
@@ -90,6 +92,16 @@
     @apply bg-clip-text text-transparent bg-gradient-to-br from-orange-600 to-red-600;
   }
 
+  /* Primary gradient using CSS variables */
+  .gradient-primary {
+    @apply bg-gradient-to-r;
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--primary)),
+      hsl(25 95% 45%)
+    );
+  }
+
   /* Glow effect */
   .glow {
     filter: drop-shadow(0 0 20px rgba(var(--glow-color) / 0.4))
@@ -99,7 +111,8 @@
   /* Glass effect with pixelated edges */
   .glass {
     @apply backdrop-blur-xl bg-white/5 dark:bg-white/5;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         to bottom right,
         rgba(251, 146, 60, 0.1) 0%,
         transparent 50%
@@ -161,16 +174,15 @@
 
   /* Grid pattern */
   .grid-pattern {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
     @apply dark:opacity-20;
   }
 
   .grid-pattern.dark {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.02) 1px,
-        transparent 1px
-      ),
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   }
 

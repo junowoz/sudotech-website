@@ -16,8 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Sudo Tech | Estúdio de Software & Design",
-  description:
-    "Criamos sistemas",
+  description: "Criamos sistemas",
   keywords:
     "desenvolvimento software, aplicativo móvel, sistema web, consultoria tecnologia, estúdio software, inovação, Brasil, agência digital, software house",
   authors: [{ name: "Sudo Tech" }],
@@ -34,8 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Sudo Tech | Estúdio de Software & Design",
-    description:
-      "Criamos sistemas",
+    description: "Criamos sistemas",
     url: "https://sudotech.com.br",
     siteName: "Sudo Tech",
     images: [
@@ -77,23 +75,6 @@ export default function RootLayout({
     <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#fb923c" />
       </head>
@@ -113,7 +94,7 @@ export default function RootLayout({
               name: "Sudo Tech",
               description: "Estúdio de Software & Design",
               url: "https://sudotech.com.br",
-              logo: "https://sudotech.com.br/sudo-tech.svg",
+              logo: "https://sudotech.com.br/logos/sudo-tech.svg",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+55-92-99285-2143",
@@ -122,9 +103,7 @@ export default function RootLayout({
                 availableLanguage: ["Portuguese"],
               },
               sameAs: [
-                "https://www.linkedin.com/company/sudotech",
-                "https://github.com/sudotech",
-                "https://instagram.com/sudotech",
+                "https://www.linkedin.com/company/sudotechbr",
               ],
             }),
           }}

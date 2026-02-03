@@ -9,11 +9,11 @@ import { ThemeToggle } from "./theme-toggle";
 import { siteContent } from "@/lib/site-content";
 
 const navItems = [
-  { label: siteContent.navigation.home, href: "#inicio" },
-  { label: siteContent.navigation.services, href: "#servicos" },
-  { label: siteContent.navigation.projects, href: "#projetos" },
+  { label: siteContent.navigation.home, href: "/#inicio" },
+  // { label: siteContent.navigation.services, href: "#servicos" },
+  { label: siteContent.navigation.projects, href: "/#projetos" },
   // { label: siteContent.navigation.about, href: "#sobre" },
-  { label: siteContent.navigation.contact, href: "#contato" },
+  { label: siteContent.navigation.partnerships, href: "/patrocinios" },
 ];
 
 export function Navigation() {
@@ -49,7 +49,7 @@ export function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0">
               <Image
-                src="/sudo-tech.svg"
+                src="/logos/sudo-tech.svg"
                 alt="Sudo Tech"
                 width={32}
                 height={32}
@@ -75,15 +75,15 @@ export function Navigation() {
               <ThemeToggle />
 
               {/* Divider */}
-              <div className="w-px h-6 bg-black/10 dark:bg-white/10" />
+              {/* <div className="w-px h-6 bg-black/10 dark:bg-white/10" /> */}
 
               {/* CTA Button */}
-              <Link
+              {/* <Link
                 href="#contato"
                 className="px-5 py-2 bg-primary text-white font-medium text-sm rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
               >
                 {siteContent.navigation.start}
-              </Link>
+              </Link> */}
             </div>
           </div>
         </nav>
@@ -107,7 +107,7 @@ export function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
-                src="/sudo-tech.svg"
+                src="/logos/sudo-tech.svg"
                 alt="Sudo Tech"
                 width={32}
                 height={32}
@@ -119,12 +119,12 @@ export function Navigation() {
               <ThemeToggle />
 
               {/* CTA Button */}
-              <Link
+              {/* <Link
                 href="#contato"
                 className="px-5 py-2 bg-primary text-white font-medium text-sm rounded-full hover:opacity-90 transition-opacity"
               >
                 {siteContent.navigation.start}
-              </Link>
+              </Link> */}
 
               {/* Mobile Menu Button */}
               <button
@@ -178,7 +178,7 @@ export function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
-                src="/sudo-tech.svg"
+                src="/logos/sudo-tech.svg"
                 alt="Sudo Tech"
                 width={32}
                 height={32}
@@ -265,7 +265,7 @@ export function Navigation() {
                   </motion.div>
                 ))}
 
-                <motion.div
+                {/* <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 }}
@@ -278,7 +278,7 @@ export function Navigation() {
                   >
                     {siteContent.navigation.start}
                   </Link>
-                </motion.div>
+                </motion.div> */}
               </div>
             </motion.nav>
           </motion.div>

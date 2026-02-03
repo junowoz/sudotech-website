@@ -16,19 +16,20 @@ import {
 import { siteContent } from "@/lib/site-content";
 
 const quickLinks = [
-  { label: siteContent.navigation.home, href: "#inicio" },
-  { label: siteContent.navigation.services, href: "#servicos" },
-  { label: siteContent.navigation.projects, href: "#projetos" },
+  { label: siteContent.navigation.home, href: "/#inicio" },
+  // { label: siteContent.navigation.services, href: "#servicos" },
+  { label: siteContent.navigation.projects, href: "/#projetos" },
   // { label: siteContent.navigation.about, href: "#sobre" },
-  { label: siteContent.navigation.contact, href: "#contato" },
+  // { label: siteContent.navigation.contact, href: "#contato" },
+  { label: siteContent.navigation.partnerships, href: "/patrocinios" },
 ];
 
-const services = [
-  { label: "Desenvolvimento Web", href: "#servicos" },
-  { label: "Aplicativos Móveis", href: "#servicos" },
-  { label: "UI/UX Design", href: "#servicos" },
-  { label: "Consultoria Tech", href: "#servicos" },
-];
+// const services = [
+//   { label: "Desenvolvimento Web", href: "#servicos" },
+//   { label: "Aplicativos Móveis", href: "#servicos" },
+//   { label: "UI/UX Design", href: "#servicos" },
+//   { label: "Consultoria Tech", href: "#servicos" },
+// ];
 
 export function FooterSection() {
   const scrollToTop = () => {
@@ -44,7 +45,7 @@ export function FooterSection() {
           <div className="space-y-6">
             <Link href="/" className="inline-block">
               <Image
-                src="/sudo-tech.svg"
+                src="/logos/sudo-tech.svg"
                 alt="Sudo Tech"
                 width={120}
                 height={40}
@@ -109,7 +110,7 @@ export function FooterSection() {
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h4 className="font-space-grotesk font-semibold mb-6">
               {siteContent.footer.services}
             </h4>
@@ -125,7 +126,7 @@ export function FooterSection() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>

@@ -3,7 +3,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import {
+  // ArrowRight,
+  Sparkles,
+} from "lucide-react";
 import { siteContent } from "@/lib/site-content";
 
 export function HeroSection() {
@@ -110,7 +113,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          <Link
+          {/* <Link
             href="#contato"
             className="group relative px-8 py-4 bg-primary text-white font-medium rounded-full overflow-hidden transition-all hover:scale-105"
           >
@@ -118,14 +121,20 @@ export function HeroSection() {
               {siteContent.hero.cta.primary}
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </span>
-          </Link>
-
+          </Link> */}
           <Link
-            href="#projetos"
-            className="px-8 py-4 border border-black/20 dark:border-white/20 text-black dark:text-white font-medium rounded-full glass hover:bg-black/5 dark:hover:bg-white/5 transition-all"
+            href="/#projetos"
+            className="group relative px-8 py-4 bg-primary text-white font-medium rounded-full overflow-hidden transition-all hover:scale-105"
           >
             {siteContent.hero.cta.secondary}
           </Link>
+
+          {/* <Link
+            href="/#projetos"
+            className="px-8 py-4 border border-black/20 dark:border-white/20 text-black dark:text-white font-medium rounded-full glass hover:bg-black/5 dark:hover:bg-white/5 transition-all"
+          >
+            {siteContent.hero.cta.secondary}
+          </Link> */}
         </motion.div>
 
         {/* Scroll Indicator */}

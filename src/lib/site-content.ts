@@ -22,8 +22,8 @@ export const siteContent = {
   },
 
   projects: {
-    badge: "Nosso Trabalho",
-    title: "Projetos recentes",
+    badge: "Projetos desenvolvidos",
+    title: "Projetos",
   },
 
   about: {
@@ -92,7 +92,6 @@ export const siteContent = {
   footer: {
     description: "Sudo Tech",
     quickLinks: "Links Rápidos",
-    services: "Nossos Serviços",
     contact: "Contato",
     cnpj: "CNPJ: 58.279.772/0001-94",
     rights: "Todos os direitos reservados.",
@@ -104,7 +103,8 @@ export const siteContent = {
     home: "Início",
     services: "Serviços",
     projects: "Projetos",
-    // about: "Sobre",
+    about: "Sobre",
+    partnerships: "Patrocínios",
     contact: "Contato",
     start: "Começar",
   },

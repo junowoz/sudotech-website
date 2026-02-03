@@ -57,11 +57,11 @@ export function ProjectsSection() {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-space-grotesk font-bold mb-6">
+          {/* <h2 className="text-4xl md:text-6xl font-space-grotesk font-bold mb-6">
             <span className="text-gradient dark:text-gradient">
               {siteContent.projects.title}
             </span>
-          </h2>
+          </h2> */}
         </motion.div>
 
         {/* Featured Projects */}
@@ -109,17 +109,6 @@ export function ProjectsSection() {
                   <p className="text-lg text-black/60 dark:text-white/80">
                     {project.description}
                   </p>
-
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 text-sm rounded-full glass border border-black/10 dark:border-white/10 text-black/70 dark:text-white/70"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
 
                   <div className="flex items-center gap-4 pt-4">
                     {project.link && (
