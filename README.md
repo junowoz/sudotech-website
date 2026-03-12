@@ -19,3 +19,4 @@ Coloque as imagens dos projetos nesta pasta seguindo as seguintes instruções:
 ## Após adicionar as imagens
 
 Após adicionar as imagens nesta pasta, descomente o componente `Image` no arquivo `src/components/portfolio.tsx` e remova o placeholder.
+# stratus-drones
