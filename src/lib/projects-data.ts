@@ -2,8 +2,8 @@ export const projects = [
   {
     id: 1,
     title: "MEPO",
-    category: "Restaurant Tech",
-    description: "Sistema Operacional para Restaurantes e Rede Social.",
+    category: "Foodservice Tech",
+    description: "Sistema Operacional para cozinhas industriais.",
     image: "/portfolio/mepo.png",
     link: "https://mepo.so",
     featured: true,
@@ -44,6 +44,16 @@ export const projects = [
   },
   {
     id: 5,
+    title: "Stratus Drones",
+    category: "Web",
+    description: "Fábrica de Drones.",
+    image: "/portfolio/stratus-drones.png",
+    link: "https://stratusdrones.com",
+    featured: true,
+    color: "from-amber-500 to-primary",
+  },
+  {
+    id: 6,
     title: "Velooh",
     category: "AdTech",
     description: "Plataforma de anúncios para tablets em viagens de Uber.",
