@@ -4,8 +4,8 @@
   "description": "Criamos sistemas",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "theme_color": "#F97415",
+  "background_color": "#ffffff",
   "orientation": "portrait",
   "icons": [
     {
@@ -14,16 +14,16 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/logos/sudo-tech-white.png",
-      "type": "image/png",
+      "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
-      "src": "/logos/sudo-tech-white.png",
-      "type": "image/png",
+      "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

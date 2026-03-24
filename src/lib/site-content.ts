@@ -6,7 +6,7 @@ export const siteContent = {
       line2: "criamos",
       highlight: "sistemas",
     },
-    subtitle: "Estúdio de Software e Design.",
+    subtitle: "Estúdio de Software & Design.",
     cta: {
       primary: "Entre em Contato",
       secondary: "Ver Projetos",
