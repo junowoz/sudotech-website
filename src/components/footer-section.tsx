@@ -192,10 +192,10 @@ export function FooterSection() {
         </div>
       </div>
 
-      {/* Back to Top */}
-      <motion.button
+      {/* Back to Top Arrow */}
+      {/* <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 p-3 rounded-full bg-primary text-white hover:scale-110 transition-transform z-40 shadow-lg"
+        className="fixed bottom-16 right-8 p-2 rounded-full bg-primary text-white hover:scale-110 transition-transform z-40 shadow-lg"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1 }}
@@ -203,7 +203,7 @@ export function FooterSection() {
         whileTap={{ scale: 0.9 }}
       >
         <ArrowUp className="w-5 h-5" />
-      </motion.button>
+      </motion.button> */}
     </footer>
   );
 }

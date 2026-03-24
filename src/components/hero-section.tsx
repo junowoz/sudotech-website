@@ -12,17 +12,15 @@ const heroWords = ["software", "hardware", "design"];
 
 export function HeroSection() {
   return (
-    <section
-      className="relative flex h-dvh items-center justify-center overflow-hidden"
-    >
+    <section className="relative flex h-dvh items-center justify-center overflow-hidden">
       {/* Grid pattern background */}
       <GridPattern
         width={48}
         height={48}
         strokeDasharray="4 3"
         className={cn(
-          "fill-black/[0.03] stroke-black/[0.07]",
-          "dark:fill-white/[0.02] dark:stroke-white/[0.06]",
+          "fill-black/[0.04] stroke-black/[0.18]",
+          "dark:fill-white/10 dark:stroke-white/18",
           "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
         )}
         squares={[

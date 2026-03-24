@@ -24,10 +24,11 @@ export default function PatrociniosPage() {
           <GridPattern
             width={48}
             height={48}
+            strokeDasharray="4 3"
             className={cn(
-              "fill-black/[0.03] stroke-black/[0.06]",
-              "dark:fill-white/[0.02] dark:stroke-white/[0.05]",
-              "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+              "fill-black/[0.04] stroke-black/[0.18]",
+              "dark:fill-white/10 dark:stroke-white/18",
+              "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
             )}
             squares={[
               [4, 4],
@@ -36,6 +37,8 @@ export default function PatrociniosPage() {
               [12, 8],
               [15, 3],
               [10, 12],
+              [3, 9],
+              [14, 6],
             ]}
           />
 
@@ -63,11 +66,22 @@ export default function PatrociniosPage() {
           <GridPattern
             width={48}
             height={48}
+            strokeDasharray="4 3"
             className={cn(
-              "fill-black/[0.02] stroke-black/[0.04]",
-              "dark:fill-white/[0.01] dark:stroke-white/[0.03]",
-              "[mask-image:linear-gradient(to_bottom,transparent,white_30%,white_70%,transparent)]"
+              "fill-black/[0.04] stroke-black/[0.18]",
+              "dark:fill-white/10 dark:stroke-white/18",
+              "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
             )}
+            squares={[
+              [4, 4],
+              [8, 2],
+              [5, 5],
+              [12, 8],
+              [15, 3],
+              [10, 12],
+              [3, 9],
+              [14, 6],
+            ]}
           />
 
           <div className="container relative z-10 mx-auto px-6">
@@ -111,7 +125,10 @@ export default function PatrociniosPage() {
               <div className="grid gap-8 md:grid-cols-2">
                 <div className="flex flex-col items-center justify-center gap-2 md:items-start">
                   <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/75 px-4 py-2 backdrop-blur dark:border-white/10 dark:bg-white/5">
-                    <Trophy className="size-4 text-primary" aria-hidden="true" />
+                    <Trophy
+                      className="size-4 text-primary"
+                      aria-hidden="true"
+                    />
                     <span className="text-sm font-medium text-black/70 dark:text-white/70">
                       Conquistas
                     </span>
