@@ -1,4 +1,15 @@
-export const projects = [
+export interface Project {
+  id: 1 | 2 | 3 | 4 | 5 | 6;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  link: string | null;
+  featured: boolean;
+  color: string;
+}
+
+export const projects: Project[] = [
   {
     id: 1,
     title: "MEPO",
@@ -14,49 +25,50 @@ export const projects = [
     title: "Consultoria em Gestão de Plataforma Digital (FUnATI)",
     category: "Consultoria",
     description:
-      "Consultoria para gestão e evolução do Prontuário Eletrônico da Pessoa Idosa (PEP), garantindo interoperabilidade, segurança (LGPD) e suporte técnico.",
+      "Consultoria para evolução do PEP da FUNATI.",
     image: "/portfolio/funati-pep.jpg",
     link: null,
     featured: true,
     color: "from-amber-500 to-primary",
   },
+  // {
+  //   id: 3,
+  //   title: "GerontoCare",
+  //   category: "Health Tech",
+  //   description:
+  //     "Coleta e visualização segura de dados clínicos para monitoramento de idosos em ambiente de nuvem.",
+  //   image: "/portfolio/funati.png",
+  //   link: null,
+  //   featured: true,
+  //   color: "from-amber-500 to-primary",
+  // },
   {
     id: 3,
-    title: "GerontoCare",
-    category: "Health Tech",
-    description:
-      "Coleta de dados de saúde com ingestão segura em nuvem e visualização para monitoramento de idosos.",
-    image: "/portfolio/funati.png",
-    link: null,
-    featured: true,
-    color: "from-amber-500 to-primary",
-  },
-  {
-    id: 4,
     title: "Plataforma de Gerenciamento Veicular (PGV)",
     category: "ERP",
     description:
-      "Sistema completo de gestão veicular com controle de acesso e auditoria para a Polícia Civil.",
+      "ERP de gestão veicular com controle de acesso, auditoria e operação institucional para a Polícia Civil.",
     image: "/portfolio/pgv.png",
     link: "https://pgv.sudotech.com.br",
     featured: true,
     color: "from-amber-500 to-primary",
   },
   {
-    id: 5,
+    id: 4,
     title: "Stratus Drones",
     category: "Web",
-    description: "Fábrica de Drones.",
+    description:
+      "Presença digital e estrutura comercial para uma marca conectada ao setor de drones.",
     image: "/portfolio/stratus-drones.png",
     link: "https://stratusdrones.com",
     featured: true,
     color: "from-amber-500 to-primary",
   },
   {
-    id: 6,
+    id: 5,
     title: "Velooh",
     category: "AdTech",
-    description: "Plataforma de anúncios para tablets em viagens de Uber.",
+    description: "Plataforma de mídia para tablets em viagens de Uber.",
     image: "/portfolio/velooh.png",
     link: "https://velooh.com",
     featured: true,

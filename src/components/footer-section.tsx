@@ -16,7 +16,7 @@ import {
 import { siteContent } from "@/lib/site-content";
 
 const quickLinks = [
-  { label: siteContent.navigation.home, href: "/#inicio" },
+  { label: siteContent.navigation.home, href: "/" },
   // { label: siteContent.navigation.services, href: "#servicos" },
   { label: siteContent.navigation.projects, href: "/#projetos" },
   // { label: siteContent.navigation.about, href: "#sobre" },
@@ -50,6 +50,7 @@ export function FooterSection() {
                 width={120}
                 height={40}
                 className="h-10 w-auto dark:invert"
+                style={{ width: "auto" }}
               />
             </Link>
             <p className="text-black/60 dark:text-white/80 text-sm leading-relaxed">

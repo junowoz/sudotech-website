@@ -1,16 +1,11 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-// import Link from "next/link";
-import { useRef } from "react";
-import {
-  // ArrowLeft,
-  Award,
-  Trophy,
-  // Calendar
-} from "lucide-react";
+import { Award, Trophy } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { GridPattern } from "@/components/ui/grid-pattern";
 import { Navigation } from "@/components/navigation";
 import { FooterSection } from "@/components/footer-section";
 
@@ -20,40 +15,42 @@ export default function PatrociniosPage() {
     threshold: 0.1,
   });
 
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
-
   return (
     <>
       <Navigation />
       <main className="relative">
         {/* Hero Section */}
-        <section className="relative min-h-[25vh] flex items-center justify-center overflow-hidden pt-32 pb-6">
-          {/* Background */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute inset-0 grid-pattern dark:grid-pattern dark opacity-30" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-orange-50/30 dark:via-orange-950/10 to-transparent" />
-          </div>
+        <section className="relative flex min-h-[25vh] items-center justify-center overflow-hidden pb-6 pt-32">
+          <GridPattern
+            width={48}
+            height={48}
+            className={cn(
+              "fill-black/[0.03] stroke-black/[0.06]",
+              "dark:fill-white/[0.02] dark:stroke-white/[0.05]",
+              "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+            )}
+            squares={[
+              [4, 4],
+              [8, 2],
+              [5, 5],
+              [12, 8],
+              [15, 3],
+              [10, 12],
+            ]}
+          />
 
-          <div className="container mx-auto px-6">
+          <div className="container relative z-10 mx-auto px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <h1 className="text-5xl md:text-5xl lg:text-5xl font-space-grotesk font-bold mb-6">
-                <span className="text-gradient dark:text-gradient">
-                  Patrocínios
-                </span>
+              <h1 className="text-balance font-space-grotesk text-5xl font-bold">
+                <span className="text-primary">Patrocínios</span>
               </h1>
 
-              <p className="text-lg md:text-xl text-black/60 dark:text-white/80 max-w-2xl mx-auto">
+              <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-black/60 dark:text-white/70">
                 A Sudo Tech acredita no poder do esporte amazonense. Apoiamos
                 atletas e academias que representam nossa região com excelência.
               </p>
@@ -62,49 +59,45 @@ export default function PatrociniosPage() {
         </section>
 
         {/* Nakay Fight Academy Section */}
-        <section
-          ref={containerRef}
-          className="relative pb-16 pt-4 overflow-hidden"
-        >
-          {/* Background */}
-          <div className="absolute inset-0 -z-10">
-            <motion.div
-              style={{ y }}
-              className="absolute inset-0 grid-pattern dark:grid-pattern dark opacity-5"
-            />
-          </div>
+        <section className="relative overflow-hidden pb-16 pt-4">
+          <GridPattern
+            width={48}
+            height={48}
+            className={cn(
+              "fill-black/[0.02] stroke-black/[0.04]",
+              "dark:fill-white/[0.01] dark:stroke-white/[0.03]",
+              "[mask-image:linear-gradient(to_bottom,transparent,white_30%,white_70%,transparent)]"
+            )}
+          />
 
-          <div className="container mx-auto px-6">
+          <div className="container relative z-10 mx-auto px-6">
             {/* Academy Introduction */}
             <motion.div
               ref={ref}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto mb-16"
+              className="mx-auto mb-16 max-w-4xl"
             >
-              <div className="flex flex-col items-center text-center gap-8">
-                <h2 className="text-3xl md:text-3xl font-space-grotesk font-bold mb-2">
+              <div className="flex flex-col items-center gap-8 text-center">
+                <h2 className="text-balance font-space-grotesk text-3xl font-bold">
                   Nakay Fight Academy
                 </h2>
-                <div className="relative w-48 h-48">
-                  <div className="absolute -inset-4 gradient-primary rounded-full blur-xl opacity-20" />
+                <div className="relative size-48">
                   <Image
                     src="/patrocinios/nakay.jpg"
                     alt="Nakay Fight Academy"
                     width={256}
                     height={256}
-                    className="relative rounded-full object-cover"
+                    className="relative size-full rounded-full object-cover"
                   />
                 </div>
 
-                <div>
-                  <p className="text-base text-black/60 dark:text-white/70 max-w-2xl mx-auto">
-                    Apoiamos a Nakay Fight Academy, uma das principais academias
-                    de Brazilian Jiu-Jitsu do Amazonas, formando campeões e
-                    promovendo os valores de disciplina, respeito e superação.
-                  </p>
-                </div>
+                <p className="mx-auto max-w-2xl text-pretty text-base text-black/60 dark:text-white/70">
+                  Apoiamos a Nakay Fight Academy, uma das principais academias
+                  de Brazilian Jiu-Jitsu do Amazonas, formando campeões e
+                  promovendo os valores de disciplina, respeito e superação.
+                </p>
               </div>
             </motion.div>
 
@@ -113,44 +106,37 @@ export default function PatrociniosPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="max-w-5xl mx-auto"
+              className="mx-auto max-w-5xl"
             >
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Achievement Details */}
-                <div className="flex flex-col justify-center items-center md:items-start space-y-2 order-1 md:order-1">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-black/10 dark:border-white/10 w-fit">
-                    <Trophy className="w-4 h-4 text-primary" />
+              <div className="grid gap-8 md:grid-cols-2">
+                <div className="flex flex-col items-center justify-center gap-2 md:items-start">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/75 px-4 py-2 backdrop-blur dark:border-white/10 dark:bg-white/5">
+                    <Trophy className="size-4 text-primary" aria-hidden="true" />
                     <span className="text-sm font-medium text-black/70 dark:text-white/70">
                       Conquistas
                     </span>
                   </div>
 
-                  <h3 className="text-3xl md:text-3xl font-space-grotesk font-bold">
+                  <h3 className="text-balance font-space-grotesk text-3xl font-bold">
                     Ouro na Taça Amazonas{" "}
-                    <span className="text-gradient dark:text-gradient">
-                      2026
-                    </span>
+                    <span className="text-primary">2026</span>
                   </h3>
 
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3 text-black/70 dark:text-white/70">
-                      <Award className="w-5 h-5 text-primary" />
-                      <span className="font-medium">
-                        Faixa Roxa - Categoria Master
-                      </span>
-                    </div>
+                  <div className="flex items-center gap-3 text-black/70 dark:text-white/70">
+                    <Award className="size-5 text-primary" aria-hidden="true" />
+                    <span className="font-medium">
+                      Faixa Roxa — Categoria Master
+                    </span>
                   </div>
                 </div>
 
-                {/* Achievement Image */}
-                <div className="relative group w-64 h-64 mx-auto order-2 md:order-2">
-                  <div className="absolute -inset-4 gradient-primary rounded-full blur-xl opacity-20 group-hover:opacity-20 transition-opacity" />
-                  <div className="relative w-full h-full rounded-full overflow-hidden">
+                <div className="relative mx-auto size-64">
+                  <div className="relative size-full overflow-hidden rounded-full">
                     <Image
                       src="/patrocinios/ouro-roxo-2026-taca-am.jpg"
-                      alt="Campeão - Ouro Taça Amazonas 2026"
+                      alt="Campeão — Ouro Taça Amazonas 2026"
                       sizes="256px"
-                      className="object-cover object-[center_60%] transition-transform duration-700 group-hover:scale-105 brightness-200"
+                      className="object-cover object-[center_60%] brightness-200"
                       fill
                     />
                   </div>

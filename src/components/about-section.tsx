@@ -145,7 +145,7 @@ export function AboutSection() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {siteContent.about.values.map((value, index) => {
-              const iconMap: { [key: string]: React.ElementType } = {
+              const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
                 Qualidade: Target,
                 Transparência: Users,
                 Agilidade: Zap,

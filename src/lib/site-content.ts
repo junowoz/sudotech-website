@@ -5,11 +5,10 @@ export const siteContent = {
       line1: "Sudo Tech",
       line2: "criamos",
       highlight: "sistemas",
-      // line3: "sob medida.",
     },
     subtitle: "Estúdio de Software e Design.",
     cta: {
-      primary: "Começar",
+      primary: "Entre em Contato",
       secondary: "Ver Projetos",
     },
   },
